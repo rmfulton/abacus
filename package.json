@@ -5,7 +5,9 @@
     "ng": "ng",
     "start": "NG_BUILD_PARALLEL_TS=0 ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {
